@@ -1,0 +1,58 @@
+:root {
+  --accent-color: #00ffc1;
+  --card-bg-color: #1e1e1e;
+  --background-color: #000000;
+  --text-color: #ffffff;
+  --font-family: 'JannaLTBold', Arial, sans-serif;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--background-color);
+  color: var(--text-color);
+  font-family: var(--font-family);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  height: 100%;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+.container {
+  max-width: 1200px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+button {
+  font-family: var(--font-family);
+  cursor: pointer;
+  border: none;
+  outline: none;
+  background-color: var(--accent-color);
+  color: #000000;
+  padding: 12px 25px;
+  border-radius: 16px;
+  font-weight: bold;
+  box-shadow: 0 0 10px var(--accent-color);
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+button:hover {
+  background-color: #00e6b2;
+  box-shadow: 0 0 15px var(--accent-color);
+}
+
+body.modal-open {
+  overflow: hidden;
+}
